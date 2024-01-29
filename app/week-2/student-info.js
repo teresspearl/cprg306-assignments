@@ -1,6 +1,6 @@
 import React from 'react';
 
-function StudentInfo() {
+export default function StudentInfo() {
   return (
     <div>
       <h1>Teress Pearl Tinga</h1>
@@ -8,5 +8,3 @@ function StudentInfo() {
     </div>
   );
 }
-
-export default StudentInfo;
