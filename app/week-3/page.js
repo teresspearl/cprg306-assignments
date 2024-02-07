@@ -3,9 +3,7 @@ import ItemList from './item-list';
 
 export default function Page() {
   return (
-    <main>
-        <h1>Shopping Lists</h1>
-        <Item />
+    <main className="p-4">
         <ItemList />
     </main>
   );

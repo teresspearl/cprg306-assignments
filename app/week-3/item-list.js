@@ -1,4 +1,6 @@
-export default function ItemList() {
+import Item from "./item";
+
+export default function ItemList () {
 const item1 = {
     name: "milk, 4 L 🥛",
     quantity: 1,
@@ -73,13 +75,12 @@ const item1 = {
 
   return (
     <main className="m-4 ml-6">
-      <h1 className="text-4xl font-bold">Week 3</h1>
-      <p>These are my favourite dogs.</p>
+      <h1 className="font-bold text-5xl py-4">Shopping Lists</h1>
       <Item
         name={item1.name}
         quantity={item1.quantity}
         category={item1.category}
-       />
+      />
       <Item
         name={item2.name}
         quantity={item2.quantity}
@@ -90,11 +91,11 @@ const item1 = {
         quantity={item3.quantity}
         category={item3.category}
       />
-       <Item
+      <Item
         name={item4.name}
         quantity={item4.quantity}
         category={item4.category}
-       />
+      />
       <Item
         name={item5.name}
         quantity={item5.quantity}
@@ -109,7 +110,7 @@ const item1 = {
         name={item7.name}
         quantity={item7.quantity}
         category={item7.category}
-       />
+      />
       <Item
         name={item8.name}
         quantity={item8.quantity}
@@ -120,11 +121,11 @@ const item1 = {
         quantity={item9.quantity}
         category={item9.category}
       />
-       <Item
+      <Item
         name={item10.name}
         quantity={item10.quantity}
         category={item10.category}
-       />
+      />
       <Item
         name={item11.name}
         quantity={item11.quantity}
@@ -137,5 +138,4 @@ const item1 = {
       />
     </main>
   );
-  
 }
