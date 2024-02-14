@@ -13,9 +13,9 @@ export default function NewItem() {
         };            
 
     return (
-      <div class="md:flex md:items-center mb-6">
+      <div class="w-min">
           <form class="bg-slate-800 shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit}>
-          <ul>                      
+          <ul class="md:flex md:items-center mb-3">                      
             <input
               type="text"
               value={name}
@@ -24,14 +24,14 @@ export default function NewItem() {
               className="text-gray-900 bg-white rounded-lg p-1 w-50"
             />
           </ul>
-          <ul>
+          <ul class="md:flex md:items-center mb-3">
             <input
               type="number"
               value={quantity}
               onChange={(event) => setQuantity(event.target.value)}
-              className="text-gray-900 bg-white rounded-lg p-1 w-10"
+              className="text-gray-900 bg-white rounded-lg p-1 w-10 mr-5"
             />
-            <select value={category} className="text-gray-900 bg-white rounded-lg p-1 w-30 " onChange={(event) => setCategory(event.target.value)} required>
+            <select value={category} className="ml-5 text-gray-900 bg-white rounded-lg p-1 w-30 " onChange={(event) => setCategory(event.target.value)} required>
             <option value="">Category</option>
             <option value="Produce">Produce</option>
             <option value="Dairy">Dairy</option>
@@ -47,7 +47,7 @@ export default function NewItem() {
             </select>
           </ul>
           <ul>
-          <button type="submit" class="hover:bg-slate-800 bg-blue-500 text-white font-bold py-1 px-10 rounded w-50 center">+</button>
+          <button type="submit" className="hover:bg-slate-900 bg-blue-500 text-white font-bold rounded-lg w-40 py-1 center ">+</button>
           </ul>
         </form>
       </div>
