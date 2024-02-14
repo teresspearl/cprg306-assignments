@@ -1,9 +1,9 @@
-import NewItem from './new-item';
+import NewItem from "./new-item";
 
 export default function Page() {
     return (
       <main className="p-4">
-          <newItem />
+          <NewItem />
       </main>
     );
   }
