@@ -2,9 +2,9 @@
 import { useState } from "react";
 
 export default function NewItem() {
-        const [name, setName] = useState("Produce");
+        const [name, setName] = useState("");
         const [quantity, setQuantity] = useState(1);
-        const [category, setCategory] = useState("");
+        const [category, setCategory] = useState("Produce");
     
         const handleSubmit = (event) => {
             event.preventDefault();
@@ -13,8 +13,8 @@ export default function NewItem() {
         };            
 
     return (
-      <div class="flex items-center justify-center rounded-lg p-6 w-30 w-min bg-slate-800 gap-y-1.5">
-          <form onSubmit={handleSubmit}>
+      <div class="md:flex md:items-center mb-6">
+          <form class="bg-slate-800 shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit}>
           <ul>                      
             <input
               type="text"
